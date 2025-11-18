@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: auto;
+           
+        }
+        .container {
+            
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box3 {
+            background-color: white;
+            width: 250px;
+            height: 350px;
+            box-shadow: 1px 1px 8px gray;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            width: 230px;
+
+        }
+
+        .box {
+            background-color: white; 
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 4px gray;
+            text-align: center;
+            font-style: calc();
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .box2 {
+            box-shadow: 1px 1px 4px gray;
+            width: 230px;
+            height: 50px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: teal;
+        }
+        .box1 .box:nth-child(4){
+            background-color: black;
+            color: white;
+        }
+        .box1 .box:nth-child(8){
+            background-color: black;
+            color: white;
+            font-size: larger;
+            
+        }
+        .box1 .box:nth-child(12){
+            background-color: black;
+            color: white;
+        }
+        .box1 .box:nth-child(15){
+            background-color: black;
+            color: white;
+        }
+        .box1 .box:nth-child(16){
+            background-color: black;
+            color: white;
+        }
+        .box1 .box:nth-child(13){
+            background-color: sandybrown;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Masai calculator</h1>
+        </div>
+        <div class="box3">
+            <div class="box2"> </div>
+            <div class="box1">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">+</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">-</div>
+                <div class="box">7</div>
+                <div class="box">8</div>
+                <div class="box">9</div>
+                <div class="box">x</div>
+                <div class="box">C</div>
+                <div class="box">0</div>
+                <div class="box">=</div>
+                <div class="box">/</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
