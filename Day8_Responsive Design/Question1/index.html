@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        .con {
+            margin: auto;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: auto;
+            gap: 20px;
+            width: 900px;
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(243, 240, 240);
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            
+            height: 80px;
+            box-shadow: 2px 1px 1px 1px rgb(234, 214, 200);
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            
+        }
+        .box1 {
+            display: flex;
+            justify-content: space-between;
+            
+            padding: 10px;
+           
+        }
+        .box2 {
+            color: rgb(154, 153, 153);
+            font-size: medium;
+        }
+        .box3 {
+            color: chocolate;
+            font-weight: bold;
+            font-size: large;
+        }
+        p {
+            font-weight: bolder;
+            font-size: large;
+            
+        }
+        @media (max-width:768px){
+            .container{
+                grid-template-columns: repeat(2,250px);
+                width: 800px;
+            }
+        }
+        @media (max-width:425px){
+            .container{
+                grid-template-columns: repeat(1,250px);
+                width: 450px;
+            }
+        }    
+    </style>
+</head>
+
+<body>
+    <div class="con">
+    <div class="container">
+        <div class="box">
+            <div class="box1">
+                <p>Cappuccino</p>
+                <p class="box3">$49</p>
+            </div>
+            <div class="box2">
+                Usage of internet is becoming more common due to rapid usage
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>Americano</p>
+                <p class="box3">$49</p>
+            </div>
+            <div class="box2">
+                Usage of internet is becoming more common due to rapid usage
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>Espresso</p>
+                <p class="box3">$49</p>
+            </div>
+            <div class="box2">
+                Usage of internet is becoming more common due to rapid usage
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>Macchiato</p>
+                <p class="box3">$49</p>
+            </div>
+            <div class="box2">
+                Usage of internet is becoming more common due to rapid usage
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>Mocha</p>
+                <p class="box3">$49</p>
+            </div>
+            <div class="box2">
+                Usage of internet is becoming more common due to rapid usage
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>CoffeeLatte</p>
+                <p class="box3">$49</p>
+            </div>
+            <div class="box2">
+                Usage of internet is becoming more common due to rapid usage
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>PiccoloLatte</p>
+                <p class="box3">$49</p>
+            </div>
+            <div class="box2">
+                Usage of internet is becoming more common due to rapid usage
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>Ristretto</p>
+                <p class="box3">$49</p>
+            </div>
+            <div class="box2">
+                Usage of internet is becoming more common due to rapid usage
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>Affogato</p>
+                <p class="box3">$49</p>
+            </div>
+            <div class="box2">
+                Usage of internet is becoming more common due to rapid usage
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+        
+    
