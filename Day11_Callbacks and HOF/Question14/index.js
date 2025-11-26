@@ -1,6 +1,6 @@
 function employees(arr){
     let a = arr.filter(arr => arr.tasksCompleted > 5)
-    let b = a.map(arr => arr.rating > 4.5 ? "Excellent" : arr.rating > 3 ? "Good" : "Needs improvement")
+    let b = a.map(arr => arr.rating > 4.5 ? {name:arr.name,performance:"Excellent" }: arr.rating > 3 ?{name:arr.name,performance:"Good" }:{name:arr.name,performance: "Needs improvement"})
     let c = b.sort((a,b) => b-a)
     return c
 }
