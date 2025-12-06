@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <button onclick="addPara()" id="addpara">Add Paragraph</button>
+    <br><br>
+    
+        <button onclick="removePara()" id="removepara">Remove Last Paragraph</button>
+        <div id="para"></div>
+    
+</body>
+<script>
+    function addPara() {
+        let div = document.getElementById("para")
+        let p = document.createElement("p")
+        p.innerText = "This is a new paragraph"
+        div.appendChild(p)
+    }
+    function removePara(){
+        let div = document.getElementById("para")
+        div.removeChild(div.lastElementChild)
+    }
+</script>
+</html>
